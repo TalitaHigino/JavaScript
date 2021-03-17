@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário Contato</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="cadastro.css">
+        <script src="cep.js"></script>
+        <script src="cadastro.js"></script>
+
+        <link rel="stylesheet" href="cep.html">    
+            <!--   <link href="ContatoEstilo.css" rel="stylesheet" media="all" />
+            <script src="JavaScript1.js"></script>-->
+    </head>
+
+    <body>
+        <form name="meu_form">
+
+            <h1>Entre em contato</h1>
+
+            <input type="text" id="nomeid" placeholder="Nome Completo" required="required" name="nome" />
+            <label for="nome">Nome</label>
+
+            <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+            <label for="fone">Telefone</label>
+
+            <input type="estadocivil" id="estadocivil" placeholder="Informe" name="estadocivil" />
+            <label for="estadocivil">Estado Civil</label>
+
+            <input type="datanasci" id="datanasci" placeholder="xx/xx/xxxx" name="datanasci" onfocus="this.checkIdade(diff)"   />
+            <label for="datanasci">Data Nascimento</label>
+
+            <input type="salario" id="salario" placeholder="R$xx,xx" name="salario" />
+            <label for="salario">Sálario</label>
+        
+            <input type="text" id="cep" name="cep" placeholder="CEP";>
+            <label for="CEP">CEP</label>
+
+            <input type="text" id="logradouro" name="lograduro" placeholder="Endereço" size="70">
+            <label for="logradouro">Logradouro</label>
+
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro"></td>
+            <label for="bairro">Bairro</label>
+
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+            <label for="cidade">Cidade</label>
+
+            <input type="text" id="uf" name="uf" placeholder="UF">
+            <label for="uf">UF</label>
+
+            <input type="button" value="Consultar" onclick="findCEP()">
+            
+
+            
+            <textarea placeholder="Deixe seu cometário"></textarea>
+            
+
+            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+            <button onclick="window.print()">Imprimir</button>
+        </form>
+        
+       
+    </body>
+   
+    
+</html>
